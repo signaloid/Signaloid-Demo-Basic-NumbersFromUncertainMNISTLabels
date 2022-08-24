@@ -9,7 +9,7 @@ Compute number from MNIST digits based on decimal positional number formula.
 
 ## Inputs
 
-Labels given by 21 users in response the question "What digit does this image represent?", for each of the images (included in the `inputs/` directory).
+Labels given by 48 humans in response the question "What digit does this image represent?", for each of the images (included in the `inputs/` directory).
 
 
 ## Outputs
