@@ -34,7 +34,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <uncertain.h>
+#include <uxhw.h>
 
 enum
 {
@@ -67,7 +67,7 @@ main(int argc, char *  argv[])
 			pow(10.0, 1.0)*digit3558 +
 			pow(10.0, 0.0)*digit5937;
 
-	libUncertainDoublePrint(value);
+	UxHwDoublePrint(value);
 
 	return 0;
 }
@@ -98,7 +98,7 @@ loadDoubleDistFromPath(const char *  filename, int sampleCount, double *  return
 		fscanf(fp, "%lf\n", &samples[i]);
 	}
 
-	*returnValue = libUncertainDoubleDistFromSamples(samples, sampleCount);
+	*returnValue = UxHwDoubleDistFromSamples(samples, sampleCount);
 
 	if (fclose(fp) != 0)
 	{
